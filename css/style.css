@@ -1,0 +1,224 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* main-menu */
+.main-menu {
+    background-color: orange;
+}
+
+span {
+    color: orange;
+}
+
+
+
+.owl-nav .owl-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    opacity: 1;
+    font-size: 50px !important;
+    color: tomato !important;
+    z-index: 1;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 1;
+    font-size: 50px !important;
+    color: tomato !important;
+    z-index: 1;
+}
+
+/* card */
+.details {
+    border: 1.5px solid grey;
+    color: #212121;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #212121;
+}
+
+.cart {
+    background-color: #212121;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    height: 39px;
+    padding-top: 9px;
+    box-shadow: 0px 5px 10px  #212121;
+}
+
+.card {
+    width: fit-content;
+}
+
+.card-body {
+    width: fit-content;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.img-thumbnail {
+    border: none;
+}
+
+.card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.card img{
+    width: 250px;
+    height: 300px;
+}
+
+
+/* button */
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-16 {
+    border: none;
+    color: #000;
+  }
+  .btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .btn-16:hover {
+    color: #000;
+  }
+  .btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .btn-16:active {
+    top: 2px;
+  }
+  
+
+
+  /* main product */
+.product >p {
+    padding-top: 20px;
+    color: #221e1e;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item >p:first-of-type {
+    color: #575757;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item >p:nth-of-type(2) {
+    color: #575757;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item >p:nth-of-type(3) {
+    color: #575757;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item-add {
+    display: flex;
+    padding-top: 10px;
+}
+.product-item-add  >a:first-of-type {
+    text-decoration: none;
+    padding: 10px 100px;
+    border: 1px solid black;
+    color: #575757;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item-add  >a:first-of-type:hover {
+    opacity: 0.8;
+}
+.product-item-add  >a:last-of-type {
+    text-decoration: none;
+    padding: 10px 14px;
+    margin-left: 10px;
+    border: 1px solid black;
+    color: #575757;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item-add  >a:last-of-type:hover {
+    opacity: 0.8;
+}
+.product-item-buy {
+    padding-top: 20px;
+}
+.product-item-buy >a {
+    text-decoration: none;
+    padding: 11px 140px;
+    color: #e7eeea;
+    background-color: #647b6e;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-item-buy >a:hover {
+    opacity: 0.8;
+}
+
+/* navbar */
+.nav-link:hover{
+    color: #333 !important;
+}
+
+

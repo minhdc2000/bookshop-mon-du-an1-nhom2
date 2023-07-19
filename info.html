@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        input[type=radio] {
+            accent-color: rgb(255, 174, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container py-3">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://bookbuy.vn/Images/frontend/base/logo-new.png" class="img-fluid" alt="logo">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Tìm kiếm"
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="fs-3 text-warning">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        Hỗ trợ tư vấn <br>
+                                        <strong class="text-warning">0798847880</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="fs-3 text-warning">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-capitalize">
+                                        xin chào! <br>
+                                        <a href="login.html" class="" style="text-decoration: none;"><strong
+                                                class="text-warning">đăng nhập</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class=" position-relative">
+                                    <span class="fs-3 text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-2-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-menu sticky-top ">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-3 text-light py-3">Danh mục sản phẩm</div> -->
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-none" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light active" aria-current="page"
+                                            href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-light  dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sản phẩm
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lienhe.html" class="nav-link text-light ">Liên hệ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="gioithieu.html" class="nav-link text-light ">Giới thiệu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <main>
+        <section class="h-100 h-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                            <div class="card-body ">
+                                <div class="info-customer">
+                                    <p class="fw-bold">Thông tin khách hàng</p>
+                                    <div class="mt-2">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingName"
+                                                placeholder="Name">
+                                            <label for="floatingName">Họ và tên</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingPhone"
+                                                placeholder="Phonenunber">
+                                            <label for="floatingPhone">Số điện thoại</label>
+                                        </div>
+                                        <div class="form-floating ">
+                                            <input type="email" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-payment mt-3">
+                                    <p class="fw-bold">Chọn cách thức giao hàng</p>
+                                    <div class="row">
+                                        <div class="form-check">
+                                            <input type="radio" name="flexRadioDisabled" id="flexRadioDisabled">
+                                            <label class="form-check-label" for="flexRadioDisabled">
+                                                Nhận tại cửa hàng
+                                            </label>
+
+                                            <input class="" type="radio" name="flexRadioDisabled"
+                                                id="flexRadioCheckedDisabled" checkedech>
+
+                                            <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                                Giao hàng tận nơi
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-adress bg-light p-2 mt-3 rounded-2">
+                                    <div class="row">
+                                        <div class="col-6 ">
+                                            <div class="dropdown bg-white rounded-2 ">
+                                                <button class="btn  dropdown-toggle w-100" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Hồ Chí Minh
+                                                </button>
+                                                <ul class="dropdown-menu w-100" style="overflow: scroll; max-height: 200px;" >
+                                                    <li><a class="dropdown-item" href="#">An Giang</a></li>
+                                                    <li><a class="dropdown-item" href="#">Bà Rịa - Vũng Tàu</a></li>
+                                                    <li><a class="dropdown-item" href="#">Bắc Giang</a></li>
+                                                    <li><a class="dropdown-item" href="#">Bắc Ninh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Bến Tre</a></li>
+                                                    <li><a class="dropdown-item" href="#">Bình Dương</a></li>
+                                                    <li><a class="dropdown-item" href="#">Cà Mau</a></li>
+                                                    <li><a class="dropdown-item" href="#">Cần Thơ</a></li>
+                                                    <li><a class="dropdown-item" href="#">Đà Nẵng</a></li>
+                                                    <li><a class="dropdown-item" href="#">Đồng Nai</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hà Nội</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hải Dương</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hải Phòng</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hồ Chí Minh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Kiên Giang</a></li>
+                                                    <li><a class="dropdown-item" href="#">Lâm Đồng</a></li>
+                                                    <li><a class="dropdown-item" href="#">Long An</a></li>
+                                                    <li><a class="dropdown-item" href="#">Nghệ An</a></li>
+                                                    <li><a class="dropdown-item" href="#">Phú Thọ</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quảng Bình</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quảng Ninh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Sóc Trăng</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tây Ninh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Thái Nguyên</a></li>
+                                                    <li><a class="dropdown-item" href="#">Thanh Hóa</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tiền Giang</a></li>
+                                                    <li><a class="dropdown-item" href="#">Trà Vinh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Vĩnh Phúc</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="dropdown bg-white rounded-2 ">
+                                                <button class="btn  dropdown-toggle w-100" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Quận / Huyện
+                                                </button>
+                                                <ul class="dropdown-menu w-100" style="overflow: scroll; max-height: 200px;">
+                                                    <li><a class="dropdown-item" href="#"></a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 1</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 2</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 3</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 4</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 5</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 6</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 7</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 8</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 9</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 10</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 11</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận 12</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Thủ Đức</a></li>
+                                                    <li><a class="dropdown-item" href="#">Huyện Hóc Môn</a></li>
+                                                    <li><a class="dropdown-item" href="#">Huyện Bình Chánh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Huyện Củ Chi</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Tân Bình</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Bình Thạnh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Gò Vấp</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Bình Tân</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Tân Phú</a></li>
+                                                    <li><a class="dropdown-item" href="#">Quận Phú Nhuận</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <div class="dropdown bg-white rounded-2">
+                                                <button class="btn  dropdown-toggle w-100" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Chọn Địa Chỉ Cửa Hàng
+                                                </button>
+                                                <ul class="dropdown-menu w-100" style="overflow: scroll; max-height: 200px;">
+                                                    <li><a class="dropdown-item" href="#">Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành phố Hồ Chí Minh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành phố Hồ Chí Minh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành phố Hồ Chí Minh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành phố Hồ Chí Minh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành phố Hồ Chí Minh</a></li>
+                                                    <li><a class="dropdown-item" href="#">Công viên phần mềm Quang QTSC Building 1, Trung, P Q.12, Thành phố Hồ Chí Minh</a></li>
+                                        
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button type="button" class="btn btn-warning w-100 rounded-2 text-white fw-bold">Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="bg-dark text-light text-capitalize py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>hỗ trợ khách hàng</h4>
+                    <ul class="menu">
+                        <li><span></span><a href="tel:0933109009">Sản phẩm &amp; Đơn hàng: 0933 109 009</a> </li>
+                        <li><span></span><a href="tel:0989439986">Kỹ thuật &amp; Bảo hành: 0989 439 986</a></li>
+                        <li><span></span><a href="tel:02838207153">Điện thoại: (028) 3820 7153 (giờ hành chính) </a>
+                        </li>
+                        <li><span></span><a href="mailto:info@bookbuy.vn">Email: info@bookbuy.vn</a></li>
+                        <li><span></span> Địa chỉ: 9 Lý Văn Phức, Tân Định, Q1, TP.HCM</li>
+                        <li><span></span><a href="lienhe.html">Sơ đồ đường đi</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

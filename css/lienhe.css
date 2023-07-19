@@ -1,0 +1,41 @@
+.item-contact {
+    display: flex;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-contact .img {
+    width: 40px;
+    height: 40px;
+    background: #ffc107;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.item-contact .img i {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.item-contact .content-r {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.item-contact .content-r p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.fill-contact label {
+    font-weight: 700;
+}
+
+.form-control {
+    background: #f7f7f7;
+    
+}

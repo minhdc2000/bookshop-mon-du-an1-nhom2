@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container py-3">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://bookbuy.vn/Images/frontend/base/logo-new.png" class="img-fluid" alt="logo">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Tìm kiếm"
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="fs-3 text-warning">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        Hỗ trợ tư vấn <br>
+                                        <strong class="text-warning">0798847880</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="fs-3 text-warning">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-capitalize">
+                                        xin chào! <br>
+                                        <a href="login.html" class="" style="text-decoration: none;"><strong class="text-warning">đăng nhập</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class=" position-relative">
+                                    <span class="fs-3 text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-menu sticky-top ">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-3 text-light py-3">Danh mục sản phẩm</div> -->
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-none" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light active" aria-current="page" href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-light  dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sản phẩm
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="lienhe.html" class="nav-link text-light ">Liên hệ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="gioithieu.html" class="nav-link text-light ">Giới thiệu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <main>
+        <div class="container w-100 mb-3" style="padding-top: 100px;">
+            <h2 class="text-capitalize text-center">mua hàng</h2>
+            <div class="row" style="padding-top: 50px;">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="product">
+                        <img src="https://th.bing.com/th/id/OIP.OsYKINpy3wwD7dN44KOJpQHaKN?pid=ImgDet&rs=1" alt="sp" style="width:100%; height: 1000px;">
+                        <p>I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="product-item">
+                        <p>Tên SP</p>
+                        <p>Mã: 001</p>
+                        <p>Giá</p>
+                        <label for="exampleInputEmail1" style="font-size: 13px; color:#575757;">Size</label>
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 345px; text-align: start; font-size: 16px; color:#575757;">
+                              Select<i style="padding-left: 255px;"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 355px;">
+                              <a class="dropdown-item" href="#">Small</a>
+                              <a class="dropdown-item" href="#">Medium</a>
+                              <a class="dropdown-item" href="#">Large</a>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1" style="font-size: 13px; color:#575757; padding-top: 5px;">Số lượng</label>
+                              <input type="number" class="form-control" id="quantity" min="1" max="100" placeholder="1" style="width: 75px;">
+                        </div>
+                        <div class="product-item-add">
+                            <a href="cart.html">thêm vào giỏ hàng</a>
+                            <a href="#"><i class="far fa-heart" style="font-size: 20px;"></i></a>
+                        </div>
+                        <div class="product-item-buy">
+                            <a href="#">Mua</a>
+                        </div>
+                    </div>
+                    <div class="product-item-content" style="padding-top: 30px;">
+                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo" style="background-color:white; padding-top: 10px;">thông tin sp <i style="padding-left: 190px;">-</i></button>
+                        <hr style="width:65%; background-color:#ccc">
+                        <div id="demo" class="collapse">
+                            I'm a product detail. I'm a great place to add more information <br> about your product such as sizing, material, care and cleaning <br> instructions. This is also a great space to write what makes this <br> product special and how your customers can benefit from this item.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 class="text-left mt-5 text-capitalize">sản phẩm liên quan</h1>
+            <hr>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card mx-auto text-capitalize">
+                        <img class='mx-auto img-thumbnail'
+                            src="https://th.bing.com/th/id/OIP.OsYKINpy3wwD7dN44KOJpQHaKN?pid=ImgDet&rs=1" />
+                        <div class="card-body text-center mx-auto">
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">Tên danh mục</h5>
+                                <!-- <p class="card-text">$299</p> -->
+                                <a href="#" class="btn details px-auto">xem thêm</a><br />
+                                <!-- <a href="#" class="btn cart px-auto">ADD TO CART</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card mx-auto text-capitalize">
+                        <img class='mx-auto img-thumbnail'
+                            src="https://th.bing.com/th/id/R.99ad631db6ca31588b87929d98c59057?rik=UbhdWMV%2b%2f4ME7A&riu=http%3a%2f%2fdocmienphi.com%2fwp-content%2fuploads%2f2016%2f04%2f27226_33718.jpg&ehk=avtbget%2bupyx3WWtq6TcWf6EfPebEM%2b49kGtSDGQZNM%3d&risl=&pid=ImgRaw&r=0" />
+                        <div class="card-body text-center mx-auto">
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">tên danh mục</h5>
+                                <!-- <p class="card-text">$299</p> -->
+                                <a href="#" class="btn details px-auto">xem thêm</a><br />
+                                <!-- <a href="#" class="btn cart px-auto">ADD TO CART</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card mx-auto text-capitalize">
+                        <img class='mx-auto img-thumbnail'
+                            src="https://th.bing.com/th/id/OIP.UN8eiVaHxGMOB6MxmFd8MQAAAA?pid=ImgDet&rs=1" />
+                        <div class="card-body text-center mx-auto">
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">tên danh mục</h5>
+                                <!-- <p class="card-text">$299</p> -->
+                                <a href="#" class="btn details px-auto">xem thêm</a><br />
+                                <!-- <a href="#" class="btn cart px-auto">ADD TO CART</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card mx-auto text-capitalize">
+                        <img class='mx-auto img-thumbnail'
+                            src="https://th.bing.com/th/id/OIP.OsYKINpy3wwD7dN44KOJpQHaKN?pid=ImgDet&rs=1" />
+                        <div class="card-body text-center mx-auto">
+                            <div class='cvp'>
+                                <h5 class="card-title font-weight-bold">tên danh mục</h5>
+                                <!-- <p class="card-text">$299</p> -->
+                                <a href="#" class="btn details px-auto">xem thêm</a><br />
+                                <!-- <a href="#" class="btn cart px-auto">ADD TO CART</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class="bg-dark text-light text-capitalize py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>hỗ trợ khách hàng</h4>
+                    <ul class="menu">
+                        <li><span></span><a href="tel:0933109009">Sản phẩm &amp; Đơn hàng: 0933 109 009</a> </li>
+                        <li><span></span><a href="tel:0989439986">Kỹ thuật &amp; Bảo hành: 0989 439 986</a></li>
+                        <li><span></span><a href="tel:02838207153">Điện thoại: (028) 3820 7153 (giờ hành chính) </a>
+                        </li>
+                        <li><span></span><a href="mailto:info@bookbuy.vn">Email: info@bookbuy.vn</a></li>
+                        <li><span></span> Địa chỉ: 9 Lý Văn Phức, Tân Định, Q1, TP.HCM</li>
+                        <li><span></span><a href="lienhe.html">Sơ đồ đường đi</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+</body>
+
+</html>
