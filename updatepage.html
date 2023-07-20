@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container py-3">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://bookbuy.vn/Images/frontend/base/logo-new.png" class="img-fluid" alt="logo">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Tìm kiếm"
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="fs-3 text-warning">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        Hỗ trợ tư vấn <br>
+                                        <strong class="text-warning">0798847880</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="fs-3 text-warning">
+                                            <i class="fa-regular fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 text-capitalize">
+                                        xin chào! <br>
+                                        <a href="login.html" class="" style="text-decoration: none;"><strong
+                                                class="text-warning">đăng nhập</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col">
+                                <a href="cart.html" class=" position-relative">
+                                    <span class="fs-3 text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-menu sticky-top ">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-3 text-light py-3">Danh mục sản phẩm</div> -->
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-none" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light active" aria-current="page" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-light  dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sản phẩm
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item text-capitalize" href="category.html">danh
+                                                    mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="category.html">danh
+                                                    mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="category.html">danh
+                                                    mục</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-light ">Liên hệ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-light ">Giới thiệu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <section class="row border m-2 shadow-lg p-3 mb-5 bg-white rounded">
+                        <div class=" in4 mt-2">
+                            <table class="table  border-bottom text-capitalize">
+                                <thead>
+                                    <tr>
+                                        <h1 class="text-capitalize text-warning">tài khoản</h1>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="updatepage.html" class="text-decoration-none text-dark">thông tin tài khoản</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="addresspage.html" class="text-decoration-none text-dark">số địa chỉ</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="cart.html" class="text-decoration-none text-dark">đơn hàng</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-8 mb-5">
+
+                    <section class="border m-2 shadow-lg p-3 mb-5 bg-white rounded" id="collapseIn4">
+                        <h1 class="text-warning text-capitalize mb-3">thông tin tài khoản</h1>
+                        <form>
+                            <div class="form-group row m-3">
+                                <label class="col-sm-2 col-form-label text-capitalize">họ</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Nhập Họ">
+                                </div>
+                            </div>
+                            <div class="form-group row m-3">
+                                <label class="col-sm-2 col-form-label text-capitalize">tên</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="Nhập Tên">
+                                </div>
+                            </div>
+                            <div class="form-group row m-3">
+                                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="staticEmail" disabled
+                                        value="email@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group row m-3">
+                                <label class="col-sm-2 col-form-label text-uppercase">sđt</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" disabled value="0798847880">
+                                </div>
+                            </div>
+                            <div class="form-group row m-3">
+                                <label class="col-sm-2 col-form-label text-capitalize">giới tính</label>
+                                <div class="col-sm-10 mt-2">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">nam</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">nữ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row m-3">
+                                <p>
+                                    <button class="btn btn-outline-warning rounded text-capitalize" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapsepassword"
+                                        aria-expanded="false" aria-controls="collapseWidthExample">
+                                        đổi mật khẩu
+                                    </button>
+                                </p>
+                                <div>
+                                    <div class="collapse" data-toggle="collapse" id="collapsepassword">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label text-capitalize">mật
+                                            khẩu cũ</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" value="">
+                                        </div>
+                                        <label for="staticEmail" class="col-sm-2 col-form-label text-capitalize">mật
+                                            khẩu mới</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" value="">
+                                        </div>
+                                        <label for="staticEmail" class="col-sm-5 col-form-label text-capitalize">xác
+                                            nhận mật khẩu mới</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button class="btn btn-warning text-light rounded text-capitalize">lưu thay đổi</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="bg-dark text-light text-capitalize py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>hỗ trợ khách hàng</h4>
+                    <ul class="menu">
+                        <li><span></span><a href="tel:0933109009">Sản phẩm &amp; Đơn hàng: 0933 109 009</a> </li>
+                        <li><span></span><a href="tel:0989439986">Kỹ thuật &amp; Bảo hành: 0989 439 986</a></li>
+                        <li><span></span><a href="tel:02838207153">Điện thoại: (028) 3820 7153 (giờ hành chính) </a>
+                        </li>
+                        <li><span></span><a href="mailto:info@bookbuy.vn">Email: info@bookbuy.vn</a></li>
+                        <li><span></span> Địa chỉ: 9 Lý Văn Phức, Tân Định, Q1, TP.HCM</li>
+                        <li><span></span><a href="/lien-he.html">Sơ đồ đường đi</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>TRỢ GIÚP</h4>
+
+                    <ul class="menu">
+
+                        <li><span></span><a href="/Help/Index/#helporder">Hướng dẫn mua hàng</a></li>
+                        <li><span></span><a href="/Help/Index/#paymenttype">Phương thức thanh toán</a></li>
+                        <li><span></span><a href="/Help/Index/#shippingtype">Phương thức vận chuyển</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#returnpolicy">Chính sách đổi - trả</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html#refundpolicy">Chính sách bồi hoàn</a></li>
+                        <li><span></span><a href="/cau-hoi-thuong-gap.html">Câu hỏi thường gặp (FAQs)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
