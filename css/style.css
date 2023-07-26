@@ -313,3 +313,16 @@ span {
     width: 100%;
 
 }
+
+/* fix */
+.title-product {
+    width: 220px;
+    height: 24px;
+}
+
+.title-product h5 {
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
