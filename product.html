@@ -65,7 +65,8 @@
                                     </div>
                                     <div class="col-9 text-capitalize">
                                         xin chào! <br>
-                                        <a href="login.html" class="" style="text-decoration: none;"><strong class="text-warning">đăng nhập</strong></a>
+                                        <a href="login.html" class="" style="text-decoration: none;"><strong
+                                                class="text-warning">đăng nhập</strong></a>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +75,7 @@
                     <div class="col-md-2">
                         <div class="row">
                             <div class="col">
-                                <a href="#" class=" position-relative">
+                                <a href="cart.html" class=" position-relative">
                                     <span class="fs-3 text-dark"><i class="fa-solid fa-cart-shopping"></i></span>
                                     <span
                                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -105,7 +106,8 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link text-light active" aria-current="page" href="index.html">Trang chủ</a>
+                                        <a class="nav-link text-light active" aria-current="page"
+                                            href="index.html">Trang chủ</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link text-light  dropdown-toggle" href="#" role="button"
@@ -113,9 +115,12 @@
                                             Sản phẩm
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
-                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
-                                            <li><a class="dropdown-item text-capitalize" href="#">danh mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="category.html">danh
+                                                    mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="category.html">danh
+                                                    mục</a></li>
+                                            <li><a class="dropdown-item text-capitalize" href="category.html">danh
+                                                    mục</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -139,46 +144,64 @@
         <div class="container w-100 mb-3" style="padding-top: 100px;">
             <h2 class="text-capitalize text-center">mua hàng</h2>
             <div class="row" style="padding-top: 50px;">
-                <div class="col-lg-6 col-sm-12">
-                    <div class="product">
-                        <img src="https://th.bing.com/th/id/OIP.OsYKINpy3wwD7dN44KOJpQHaKN?pid=ImgDet&rs=1" alt="sp" style="width:100%; height: 1000px;">
-                        <p>I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.</p>
+                <div class="col-lg-7 col-sm-12 ">
+                    <div class="product ">
+                        <div class="row">
+                            <div class="product-small-img col-3">
+                                <img src="img/book.png" onclick="myFunction(this)">
+                                <img src="img/book2.jpg" onclick="myFunction(this)">
+                                <img src="img/book3.jpg" onclick="myFunction(this)">
+                                <img src="img/book5.jpg" onclick="myFunction(this)">
+                            </div>
+                            <div class="img-container col-9">
+                                <img id="imageBox" src="img/book.png">
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-5 col-sm-12">
                     <div class="product-item">
                         <p>Tên SP</p>
                         <p>Mã: 001</p>
                         <p>Giá</p>
                         <label for="exampleInputEmail1" style="font-size: 13px; color:#575757;">Size</label>
                         <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 345px; text-align: start; font-size: 16px; color:#575757;">
-                              Select<i style="padding-left: 255px;"></i>
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="width: 345px; text-align: start; font-size: 16px; color:#575757;">
+                                Select<i style="padding-left: 255px;"></i>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 355px;">
-                              <a class="dropdown-item" href="#">Small</a>
-                              <a class="dropdown-item" href="#">Medium</a>
-                              <a class="dropdown-item" href="#">Large</a>
+                                <a class="dropdown-item" href="#">Small</a>
+                                <a class="dropdown-item" href="#">Medium</a>
+                                <a class="dropdown-item" href="#">Large</a>
                             </div>
                         </div>
                         <form>
                             <div class="form-group">
-                              <label for="exampleFormControlInput1" style="font-size: 13px; color:#575757; padding-top: 5px;">Số lượng</label>
-                              <input type="number" class="form-control" id="quantity" min="1" max="100" placeholder="1" style="width: 75px;">
-                        </div>
-                        <div class="product-item-add">
-                            <a href="cart.html">thêm vào giỏ hàng</a>
-                            <a href="#"><i class="far fa-heart" style="font-size: 20px;"></i></a>
-                        </div>
-                        <div class="product-item-buy">
-                            <a href="#">Mua</a>
-                        </div>
+                                <label for="exampleFormControlInput1"
+                                    style="font-size: 13px; color:#575757; padding-top: 5px;">Số lượng</label>
+                                <input type="number" class="form-control" id="quantity" min="1" max="100"
+                                    placeholder="1" style="width: 75px;">
+                            </div>
+                            <div class="product-item-add">
+                                <a href="cart.html">thêm vào giỏ hàng</a>
+                                <a href="#"><i class="far fa-heart" style="font-size: 20px;"></i></a>
+                            </div>
+                            <div class="product-item-buy">
+                                <a href="#">Mua</a>
+                            </div>
                     </div>
                     <div class="product-item-content" style="padding-top: 30px;">
-                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo" style="background-color:white; padding-top: 10px;">thông tin sp <i style="padding-left: 190px;">-</i></button>
+                        <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#demo"
+                            style="background-color:#ffc107; padding: 10px; color: #fff;">Hiển thị mô tả</button>
                         <hr style="width:65%; background-color:#ccc">
                         <div id="demo" class="collapse">
-                            I'm a product detail. I'm a great place to add more information <br> about your product such as sizing, material, care and cleaning <br> instructions. This is also a great space to write what makes this <br> product special and how your customers can benefit from this item.
+                            I'm a product detail. I'm a great place to add more information <br> about your product such
+                            as sizing, material, care and cleaning <br> instructions. This is also a great space to
+                            write what makes this <br> product special and how your customers can benefit from this
+                            item.
                         </div>
                     </div>
                 </div>
@@ -244,7 +267,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
 
@@ -340,13 +362,26 @@
                 }
             }
         })
-    </script>
-    
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
+        // js image gallery
+        function myFunction(smallImg) {
+            var fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src;
+        }
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script> -->
 </body>
 
 </html>
