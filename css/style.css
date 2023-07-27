@@ -314,5 +314,20 @@ span {
 
 }
 
+<<<<<<< HEAD
 
 /* comment */
+=======
+/* fix */
+.title-product {
+    width: 220px;
+    height: 24px;
+}
+
+.title-product h5 {
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+>>>>>>> 73b69e12acad268d46be645201cfb83abb87412b
